@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.propolingo.propolinfo.controllers.MediaPlayerController">
+   <children>
+      <VBox layoutX="125.0" layoutY="41.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="250.0" fitWidth="450.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></MediaView>
+            <Slider stylesheets="@../css/media_player.css" />
+            <HBox prefHeight="50.0" prefWidth="450.0" styleClass="media_controllers" stylesheets="@../css/media_player.css">
+               <children>
+                  <Button fx:id="playback_button" mnemonicParsing="false">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PAUSE" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

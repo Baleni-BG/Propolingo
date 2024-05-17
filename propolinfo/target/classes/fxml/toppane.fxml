@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="toppane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.propolingo.propolinfo.controllers.TopPaneController">
+   <children>
+      <HBox layoutX="100.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" styleClass="propolingo_button_holder" stylesheets="@../css/toppane.css">
+         <children>
+            <Button fx:id="propolingovideo_button" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" stylesheets="@../css/toppane.css" text="propolingo">
+               <graphic>
+                  <FontAwesomeIconView glyphName="VIDEO_CAMERA" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

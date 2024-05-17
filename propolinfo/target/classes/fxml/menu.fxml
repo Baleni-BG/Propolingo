@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="40.0" styleClass="menu" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/20.0.1"
+ xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.propolingo.propolinfo.controllers.MenuController">
+   <children>
+      <VBox layoutX="2.0" layoutY="72.0" prefHeight="400.0" prefWidth="35.0" styleClass="buttons_holder" stylesheets="@../css/menu.css">
+         <children>
+            <Button fx:id="home_button" minWidth="35.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" />
+               </graphic>
+            </Button>
+            <Label text="HOME">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Button fx:id="lessons_button" minWidth="35.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="BOOK" />
+               </graphic>
+            </Button>
+            <Label text="LESSONS">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Button fx:id="notes_button" minWidth="35.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PENCIL" />
+               </graphic>
+            </Button>
+            <Label text="NOTES">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Button fx:id="progress_button" minWidth="35.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="TROPHY" />
+               </graphic>
+            </Button>
+            <Label text="PROGRESS">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Button fx:id="results_button" minWidth="35.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PRINT" />
+               </graphic>
+            </Button>
+            <Label text="RESULTS">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Button fx:id="signout_button" minWidth="35.0" mnemonicParsing="false" styleClass="signout_button" stylesheets="@../css/menu.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" />
+               </graphic>
+            </Button>
+            <Label text="SIGN OUT">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="2.0" layoutY="14.0" prefHeight="50.0" prefWidth="35.0" styleClass="aboutapp_button_holder" stylesheets="@../css/menu.css">
+         <children>
+            <Button minWidth="35.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="QUESTION" />
+               </graphic>
+            </Button>
+            <Label text="ABOUT APP">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
