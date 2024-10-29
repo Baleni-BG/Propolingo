@@ -1,6 +1,6 @@
 Propolingo is an educational game gamified, targeting undergraduate students with propositional logic.
 
-First, download the zip file and then extract your administrations to your current computer.
+First, download the zip file and then extract your administrations to your current computer. The latest updated Zip file is propolinfo(6)
 Technologies Used
 JavaFX SDK: 20.0.0 This is used when advanced graphics or UI components are required.
 Java Runtime Environment: The JRE is version 1.7.0, compatible with Java 17 code with a runtime for the JavaFX application.
