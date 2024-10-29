@@ -1,4 +1,4 @@
-ropolingo is an educational game gamified, targeting undergraduate students with propositional logic.
+Propolingo is an educational game gamified, targeting undergraduate students with propositional logic.
 
 First, download the zip file and then extract your administrations to your current computer.
 Technologies Used
@@ -27,6 +27,28 @@ GitHub: This was a version control medium that provided source code management; 
 
 Testing
 JUnit: JUnit was utilised in the development of this application to test many parts. The JUnit library has been used only for development and does not form part of the overall package.
+This project includes JUnit tests for several controllers in the com.propolingo.propolinfo.controllers package. The controllers tested include:
+
+SymbolsExerciseController
+StatementsExerciseController
+EquivalenceExerciseController
+EntailmentExerciseController
+These tests validate the functionality of user input fields and ensure that the expected answers produce the correct visual feedback.
+Each controller test checks the following:
+
+Validates correct answers by setting input fields and asserting that the background color changes to light green.
+Validates incorrect answers (for StatementsExerciseController) by setting input fields and asserting that the background color changes to light coral.
+
+The tests are built using JUnit 5
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <version>5.8.1</version>
+    <scope>test</scope>
+</dependency>
+You can run the tests using your IDE's built-in testing tools or from the command line.
+mvn test
+
 
 Getting Started
 To clone and run the application on your local machine:
